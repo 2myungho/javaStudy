@@ -17,3 +17,5 @@ public class AuthApp2 {
 		}
 	}
 }
+
+//원시 데이터 타입이 아닌 경우 equals 사용
