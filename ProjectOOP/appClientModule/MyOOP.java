@@ -1,14 +1,12 @@
 public class MyOOP {
 	public static void main(String[] args) {
-		Print P1 = new Print();
-		P1.delimiter = "****";
+		Print P1 = new Print("----");
 		P1.A();
 		P1.A();
 		P1.B();
 		P1.B();
 		
-		Print P2 = new Print();
-		P2.delimiter = "----";
+		Print P2 = new Print("****");
 		P2.A();
 		P2.A();
 		P2.B();
