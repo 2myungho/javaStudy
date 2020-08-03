@@ -22,6 +22,19 @@ public class CarExample {
 		System.out.println("myCar4.model : " + myCar4.model);
 		System.out.println("myCar4.color : " + myCar4.color);
 		System.out.println("myCar4.maxSpeed : " + myCar4.maxSpeed);
-	}
+		
+		//메소드
+		myCar.setGas(5); //car의 setGas() 메소드 호출
+		boolean gasState = myCar.isLeftGas(); //Car의 isLeftGas() 메소드 호출
+		if(gasState) {
+			System.out.println("출발합니다.");
+			myCar.run(); //Car의 run() 메소드 호출
+		}
 
+		if(myCar.isLeftGas()) { //Car의 isLeftGas() 메소드 호출
+			System.out.println("gas를 주입할 필요가 없습니다.");
+		}else {
+			System.out.println("gas를 주입하세요.");
+		}
+	}
 }

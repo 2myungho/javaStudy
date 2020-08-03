@@ -14,5 +14,8 @@ public class CalculatorExample {
 		System.out.println("result2 : " + result2);
 		
 		myCalc.powerOff();
+		
+		//클래스 내부에서 메소드 호출
+		myCalc.execute();
 	}
 }
