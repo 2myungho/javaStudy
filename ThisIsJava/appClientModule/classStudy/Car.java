@@ -53,6 +53,36 @@ public class Car {
 			}
 		}
 	}
+	
+	//Getter와 Setter 메소드 선언
+	//필드
+	private int speed;
+	private boolean stop;
+	
+	//생성자
+	
+	//메소드
+	
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		if(speed<0) {
+			this.speed = 0;
+			System.out.println("멈춥니다.");
+			return;
+		}else {
+			this.speed = speed;
+			System.out.println("달리고 있습니다.");
+		}
+	}
+	public boolean isStop() {
+		return stop;
+	}
+	public void setStop(boolean stop) {
+		this.stop = stop;
+		this.speed = 0;
+	}
 }
 
 /* 중복 코드가 많은 때 위에 내용 사용

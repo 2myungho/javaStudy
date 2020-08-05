@@ -15,7 +15,16 @@ public class CalculatorExample {
 		
 		myCalc.powerOff();
 		
-		//클래스 내부에서 메소드 호출
+		//클래스 내부에서 메소드 호출`
 		myCalc.execute();
+		
+		//정적 멤버 사용
+		double result3 = 10 * 10 * Calculator.pi;
+		int result4 = Calculator.plus3(10, 5);
+		int result5 = Calculator.minus(10, 5);
+		
+		System.out.println("result3 : " + result3);
+		System.out.println("result4 : " + result4);
+		System.out.println("result5 : " + result5);
 	}
 }
